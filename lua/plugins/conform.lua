@@ -3,7 +3,7 @@ return {
   opts = {
     formatters_by_ft = {
       c = { "clang_format" },
-      markdown = { "markdownlint" },
+      markdown = { "prettier", "markdownlint", "codespell" },
     },
     formatters = {
       shfmt = {
@@ -13,7 +13,10 @@ return {
         prepend_args = { "--style={BasedOnStyle: llvm, BreakArrays: true}" },
       },
       markdownlint = {
-        prepend_args = { "-c .markdownlint.yaml" },
+        cwd = require("conform.util").root_file({ ".markdownlint.yaml" }),
+      },
+      prettier = {
+        cwd = require("conform.util").root_file({ ".markdownlint.yaml", ".prettierrc" }),
       },
     },
   },
