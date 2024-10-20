@@ -13,6 +13,7 @@ return {
         prepend_args = { "--style={BasedOnStyle: llvm, BreakArrays: true}" },
       },
       markdownlint = {
+        prepend_args = { "--config .markdownlint.yaml" },
         cwd = require("conform.util").root_file({ ".markdownlint.yaml" }),
       },
       prettier = {
