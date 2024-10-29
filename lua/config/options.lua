@@ -3,4 +3,3 @@
 -- Add any additional options here
 local opt = vim.opt
 opt.wrap = true
-vim.g.disable_autoformat = true
