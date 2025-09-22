@@ -1,0 +1,4 @@
+- Top item with a nested list:
+  - Nested item one which should wrap properly with hanging indentation under
+    the nested bullet
+  - Nested item two

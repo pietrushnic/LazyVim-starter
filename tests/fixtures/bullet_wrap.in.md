@@ -1,0 +1,1 @@
+- This is a long bullet item that should wrap across lines when the line length exceeds the text width, to test hanging indentation under the bullet marker and ensure the wrap respects the 80 character limit.

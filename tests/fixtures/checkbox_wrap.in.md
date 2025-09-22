@@ -1,0 +1,1 @@
+- [ ] This is a checkbox list item that should wrap across lines and preserve the checkbox marker on wrap.

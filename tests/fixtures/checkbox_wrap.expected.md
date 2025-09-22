@@ -1,0 +1,1 @@
+<file>\n00001|  - [ ] This is a checkbox list item that should wrap across lines and preserve\n00002|      the checkbox marker on wrap.\n00003| \n</file>

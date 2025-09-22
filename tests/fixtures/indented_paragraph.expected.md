@@ -1,0 +1,1 @@
+<file>\n00001|     This is a new indented paragraph to test wrapping with indentation preserved\n00002|     while respecting 80-char width.\n00003| \n</file>
