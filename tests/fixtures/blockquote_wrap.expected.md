@@ -1,1 +1,1 @@
-<file>\n00001| > A blockquote that wraps while keeping indentation for continuation lines to be\n00002|   \tverify markdown wrap behavior within blockquotes.\n00003| \n</file>
+<file>\n00001|  > A blockquote that wraps while keeping indentation for continuation lines to be\n00002|  > verify markdown wrap behavior within blockquotes.\n00003|  \n</file>

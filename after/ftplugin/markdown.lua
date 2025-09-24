@@ -7,11 +7,14 @@ o.breakindentopt = "shift:2,min:20,sbr"
 o.showbreak = "↪ "
 o.textwidth = 80
 o.formatexpr = ""
--- Basic list wrapping guards for consistency
+-- Restore robust format list recognition (bullets, numbers, checkboxes)
+-- and preserve hanging indentation across wrapped lines
 o.formatoptions:remove("a")
 o.formatoptions:remove("t")
 o.formatoptions:append("cqjnro2")
--- Removed: o.formatlistpat due to complexity in Lua long bracket; will reintroduce later with a safe delim
+-- a best-effort, safe delimiter for the regex to avoid Lua string issues
+-- This helps Markdown lists wrap without swallowing content
+o.formatlistpat = [[^\s*\%([0-9]\+\.[^ ]*\)\|\%([ivxlIVXL]+\)\|[-*+]\)\s\+\%([\[][^[\]]*\]\s\+)\?]]
 o.comments:append("b:*")
 o.comments:append("b:-")
 o.comments:append("b:+")

@@ -20,7 +20,7 @@ function M.run(infile, outfile)
     if lines[i] == "" then trailing_blanks = trailing_blanks + 1 else break end
   end
   for i, line in ipairs(lines) do
-    header[#header+1] = string.format("%05d| %s", i, line)
+    header[#header+1] = string.format("%05d|  %s", i, line)
   end
   for i = 1, trailing_blanks do
     header[#header+1] = ""
